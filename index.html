@@ -190,7 +190,7 @@
       try {
         // The backend server should be running on the same host but a different port (e.g., 4000)
         // For local development or a proxy, this URL might need adjustment
-        const response = await fetch('http://localhost:4000/analyze', { // Adjust if using ngrok or different port
+        const response = await fetch(\'https://blueprint-ai-backend-ogd8.onrender.com/analyze\', { // Adjust if using ngrok or different port
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
